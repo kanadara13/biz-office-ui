@@ -21,7 +21,8 @@ class MainSidebar extends Component {
                         <span className="pull-right-container"><i className="fa fa-angle-left pull-right"></i></span>
                     </Link>
                     <ul className="treeview-menu">
-                        <li className="active"><Link to="/material"><i className="fa fa-circle-o"></i>재료관리</Link></li>
+                        <li><Link to="/material"><i className="fa fa-circle-o"></i>목록</Link></li>
+                        <li><Link to="/materialWrite"><i className="fa fa-circle-o"></i>등록</Link></li>
                     </ul>
                 </li>
                 </ul>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import MainHeader from "./layout/MainHeader";
 import MainSidebar from "./layout/MainSidebar"
 import Material from './material/Material';
+import MaterialWrite from './material/MaterialWrite';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
                <div className="content-wrapper">
                    <Switch>
                        <Route exact path="/material" component={Material}/>
+                       <Route exact path="/materialWrite" component={MaterialWrite}/>
                    </Switch>
                </div>
                <footer className="main-footer">

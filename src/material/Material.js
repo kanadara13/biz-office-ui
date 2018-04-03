@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ContentHeader from '../component/ContentHeader';
 import Table from '../component/Table';
 import Alert from '../component/Alert';
@@ -63,12 +64,8 @@ class Material extends Component {
 
     renderButton = () => {
         return <div className="box-footer">
-                <button onClick={this.handleClick} className="btn btn-info pull-right">등록</button>
+                    <Link to="/material/write"><button className="btn btn-info pull-right">등록</button></Link>
               </div>
-    }
-
-    handleClick = () => {
-        console.log('this is:', this);
     }
 
     render() {
